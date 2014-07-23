@@ -1,5 +1,5 @@
 //
-//  MFLAppDelegate.h
+//  MFLTableViewController.h
 //  List app
 //
 //  Created by Daniel Merrill on 7/23/14.
@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MFLAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface MFLTableViewController : UITableViewController
 
 
 @end
