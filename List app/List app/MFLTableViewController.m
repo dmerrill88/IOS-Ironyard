@@ -10,7 +10,21 @@
 
 @interface MFLTableViewController ()
 
-@property (nonatomic) NSArray *listitems;
+@property (nonatomic) NSArray *days;
+
+@property (nonatomic) NSArray *liststudents;
+
+@property (nonatomic) NSArray *listcolors;
+
+@property (nonatomic) NSArray *listsizes;
+
+@property (nonatomic) NSArray *info;
+
+//create an array for students- NSStrings
+
+// create an array for colors- UICOLORS
+
+//create an array for sizes- NSNumbers
 
 
 @end
@@ -21,19 +35,27 @@
 {
     self = [super initWithStyle:style];
     if (self) {
+       
         // Custom initialization
         
-      //  self.listitems = [[NSArray alloc] initWithObjects:@"Monday","Tuesday","Wednesday","Thursday", nil];
-        
-       // self.listitems =[NSArray arrayWithObjects:@"Monday","Tuesday","Wednesday","Thursday",nil];
-      
+
         // [self setListitems: = @[@"Monday",@"Tuesday",@"Wednesday",@"Thursday"]];
 
         
-        self.listitems = @[@"Monday",@"Tuesday",@"Wednesday",@"Thursday"];
+        self.days =  @[@"Monday",@"Tuesday",@"Wednesday",@"Thursday",@"Friday",@"Saturday",@"Sunday"];
+       
+        self.liststudents =  @[@"Daniel",@"Jo",@"Jeff",@"Jack",@"John",@"Stacy",@"Ali"];
+        
+        self.listcolors =  @[[UIColor greenColor],[UIColor colorWithRed:0.079 green:0.193 blue:1.000 alpha:1.000],[UIColor colorWithRed:1.000 green:0.029 blue:0.018 alpha:1.000],[UIColor colorWithRed:1.000 green:0.037 blue:0.986 alpha:1.000],[UIColor colorWithRed:0.988 green:1.000 blue:0.019 alpha:1.000],[UIColor colorWithRed:1.000 green:0.513 blue:0.046 alpha:1.000],[UIColor colorWithRed:0.469 green:0.466 blue:0.473 alpha:1.000]];
+
+        self.listsizes =  @[@23,@28,@33,@38,@32,@27,@24];
+        
+       
         
         
-        
+        //self.info =@[
+                    // @{@"day":@"Monday", @"color":[UIColor redColor], @"name":@"Matt", @"size":@20},
+                   //  @{@"day":@"Tuesday", @"color":[UIColor greenColor]}];
         
 
         
@@ -70,12 +92,7 @@
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return self.listitems.count;
-    
-    
-    
-    
-    
+    return self.days.count;
 }
 
 
@@ -85,19 +102,41 @@
 {
 
     
-    UITableViewCell * cell = [[UITableViewCell alloc] init];
+    UITableViewCell * cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     
-    NSString * listItem = [self.listitems objectAtIndex:indexPath.row];
     
+    
+   //NSDictionary * infoItem = self.info[indexPath.row];
+    
+
+ //  NSString * day = infoItem[@"day"]
+    
+    
+    
+    //NSString * listItem = [self.listitems objectAtIndex:indexPath.row];
+    NSString * listItem = self.days [indexPath.row];
+   
     NSLog(@"listItem = %@",listItem);
     
+    cell.backgroundColor = self.listcolors [indexPath.row];
+
+    NSString * studentname = self.liststudents [indexPath.row];
+
+    NSNumber * size = self.listsizes [indexPath.row];
+
     
-    listItem = self.listitems [indexPath.row];
     
+    //SET BACKGROUNG COLOR IN ARRAY
     
+    //THERE IS A SUBTEXT OPTION THAT WILL BE SET BY STUDENT NAME
     
+    // SET THE TEXT LABEL FONT SIZE TO A NUMBER FROM THE LAST ARRAY
     
     cell.textLabel.text = listItem;
+    
+    cell.detailTextLabel.text = studentname;
+    
+    cell.textLabel.font = [UIFont systemFontOfSize:[size intValue]];
     
     // Configure the cell...
     
