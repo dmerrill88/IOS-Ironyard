@@ -10,18 +10,27 @@
 
 #import "GFATableViewCell.h"
 
+#import "GFAViewController.h"
+
+#import "GRAGithubRequest.h"
+
+
 @interface GFATableViewController ()
 
 
+
+//token ID for github: 5a8a9a902c79cd30e2eba6e2904bf1ec32cc353c
 
 
 @end
 
 @implementation GFATableViewController
 
-
-
 {
+    UITextField * search;
+    
+    
+    
     NSMutableArray * githubFriends;
 }
 
@@ -31,15 +40,27 @@
     if (self)
     {
         // Custom initialization
-        githubFriends = [@[
-                           @{
-            @"login": @"dmerrill88",
-            @"id": @8224723,@"avatar_url": @"https://avatars.githubusercontent.com/u/1536630?",}
-                           
-                           ] mutableCopy];
+        githubFriends = [@[] mutableCopy];
+        
+        NSArray * loadedUsers = [GRAGithubRequest loadUsers];
         
         
-    
+        if (loadedUsers)
+        {
+            githubFriends = [loadedUsers mutableCopy];
+        }
+        
+        
+        self.tableView.rowHeight = 100;
+        
+        self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+        
+        
+        
+        
+        
+        
+        
     }
     
     return self;
@@ -50,11 +71,59 @@
     [super viewDidLoad];
     
     
-    UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    
+    [self.view addGestureRecognizer:tap];
+    [tap setCancelsTouchesInView:NO];
+    
+    
+    
+    UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 90)];
     
     self.tableView.tableHeaderView =headerView;
     
     
+    search = [[UITextField alloc] initWithFrame:CGRectMake(10.0, 30.0,  250.0, 40.0)];
+    
+    
+    search.backgroundColor = [UIColor whiteColor];
+    
+    
+    
+    search.borderStyle = UITextBorderStyleLine;
+    
+    [headerView addSubview:search];
+    
+    CGRect sepFrame = CGRectMake(0, headerView.frame.size.height-1, 320, 1);
+    UIView * seperatorView = [[UIView alloc] initWithFrame:sepFrame];
+    seperatorView.backgroundColor = [UIColor colorWithWhite:224.0/255.0 alpha:1.0];
+    [headerView addSubview:seperatorView];
+    
+    
+    
+    headerView.backgroundColor = [UIColor colorWithRed:0.961f green:0.094f blue:0.322f alpha:1.0f];
+    
+    
+    
+    
+    UIButton * searchiconbutton = [[UIButton alloc] initWithFrame:CGRectMake(270.0,  30.0, 40.0, 40.0)];
+    
+    searchiconbutton.backgroundColor = [UIColor whiteColor];
+    
+    searchiconbutton.layer.cornerRadius = 20;
+    
+    [searchiconbutton addTarget:self action:@selector(addUser) forControlEvents:(UIControlEventTouchUpInside)];
+    
+    
+    
+    [headerView addSubview:searchiconbutton];
+    
+    
+    
+    
+    
+    
+   
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -62,11 +131,30 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
+
+-(void)addUser
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"searchbuttonclicked");
+    
+    NSDictionary * userInfo = [GRAGithubRequest requestUserinfo:search.text];
+    
+    //[githubFriends addObject:userInfo];
+    
+    [githubFriends insertObject:userInfo atIndex:0];
+    
+    [self.tableView reloadData];
+    
+    [GRAGithubRequest saveUsers:githubFriends];
 }
+
+
+
+-(void)dismissKeyboard
+{
+    [search resignFirstResponder];
+}
+
+
 
 #pragma mark - Table view data source
 
@@ -81,7 +169,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 
 {
-    return 60;
+    return 115;
 }
 
 
@@ -98,7 +186,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     GFATableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-
+    
     
     if (cell == nil)
     {
@@ -108,6 +196,7 @@
     
     cell.friendInfo = githubFriends [indexPath.row];
     
+    cell.navigationController = self.navigationController;
     
     // Configure the cell...
     
@@ -117,53 +206,62 @@
 }
 
 
-/*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        [githubFriends removeObjectAtIndex:indexPath.row];
+        
+        [GRAGithubRequest saveUsers:githubFriends];
+        
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
+    
 }
-*/
+//        -(void)dismissKeyboard
+//        {
+//            [searchTextbox resignFirstResponder];
+//        }
+//
+//        - (void)viewDidLoad
+//        {
+//
+//
+//            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+//
+//            [self.view addGestureRecognizer:tap];
+//            [tap setCancelsTouchesInView:NO];
+//    }
+//}
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+ {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+ {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

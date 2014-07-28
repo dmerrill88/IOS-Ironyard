@@ -1,32 +1,24 @@
 //
-//  GFAAppDelegate.m
-//  githubfriends
+//  GRAAppDelegate.m
+//  git_hubrequest
 //
-//  Created by Daniel Merrill on 7/24/14.
+//  Created by Daniel Merrill on 7/28/14.
 //  Copyright (c) 2014 Daniel Merrill. All rights reserved.
 //
 
-#import "GFAAppDelegate.h"
+#import "GRAAppDelegate.h"
 
-#import "GFATableViewController.h"
+#import "GRAGithubRequest.h"
 
-@implementation GFAAppDelegate
+
+@implementation GRAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [GRAGithubRequest requestUserinfo:@"joalbright"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     // Override point for customization after application launch.
-    
-    
-    GFATableViewController* tVC = [[GFATableViewController alloc] initWithStyle:UITableViewStylePlain];
-    
-    // Ask me about this later
-    
-    UINavigationController* nC = [[UINavigationController alloc] initWithRootViewController:tVC];
-    self.window.rootViewController = nC;
-    
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

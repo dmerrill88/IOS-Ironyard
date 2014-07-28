@@ -21,6 +21,12 @@
 		600DF31E19813EE600005D9D /* githubfriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 600DF31D19813EE600005D9D /* githubfriendsTests.m */; };
 		600DF32A19813F9A00005D9D /* GFATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600DF32919813F9A00005D9D /* GFATableViewController.m */; };
 		600DF32D1981481700005D9D /* GFATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 600DF32C1981481700005D9D /* GFATableViewCell.m */; };
+		6095B0F11982A7D900FFC6D5 /* GFAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6095B0F01982A7D900FFC6D5 /* GFAViewController.m */; };
+		60D9A9581986A1D7004FEDE6 /* GRAGithubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D9A9571986A1D7004FEDE6 /* GRAGithubRequest.m */; };
+		60D9A95D1986DD42004FEDE6 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 60D9A9591986DD42004FEDE6 /* downArrow.png */; };
+		60D9A95E1986DD42004FEDE6 /* profileArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 60D9A95A1986DD42004FEDE6 /* profileArrow.png */; };
+		60D9A95F1986DD42004FEDE6 /* searchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 60D9A95B1986DD42004FEDE6 /* searchButton.png */; };
+		60D9A9601986DD42004FEDE6 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 60D9A95C1986DD42004FEDE6 /* upArrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,14 @@
 		600DF32919813F9A00005D9D /* GFATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFATableViewController.m; sourceTree = "<group>"; };
 		600DF32B1981481700005D9D /* GFATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFATableViewCell.h; sourceTree = "<group>"; };
 		600DF32C1981481700005D9D /* GFATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFATableViewCell.m; sourceTree = "<group>"; };
+		6095B0EF1982A7D900FFC6D5 /* GFAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFAViewController.h; sourceTree = "<group>"; };
+		6095B0F01982A7D900FFC6D5 /* GFAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFAViewController.m; sourceTree = "<group>"; };
+		60D9A9561986A1D7004FEDE6 /* GRAGithubRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRAGithubRequest.h; sourceTree = "<group>"; };
+		60D9A9571986A1D7004FEDE6 /* GRAGithubRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRAGithubRequest.m; sourceTree = "<group>"; };
+		60D9A9591986DD42004FEDE6 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
+		60D9A95A1986DD42004FEDE6 /* profileArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileArrow.png; sourceTree = "<group>"; };
+		60D9A95B1986DD42004FEDE6 /* searchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchButton.png; sourceTree = "<group>"; };
+		60D9A95C1986DD42004FEDE6 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,10 @@
 		600DF2EC19813EE600005D9D = {
 			isa = PBXGroup;
 			children = (
+				60D9A9591986DD42004FEDE6 /* downArrow.png */,
+				60D9A95A1986DD42004FEDE6 /* profileArrow.png */,
+				60D9A95B1986DD42004FEDE6 /* searchButton.png */,
+				60D9A95C1986DD42004FEDE6 /* upArrow.png */,
 				600DF32719813F8600005D9D /* Controllers */,
 				600DF2FE19813EE600005D9D /* githubfriends */,
 				600DF31719813EE600005D9D /* githubfriendsTests */,
@@ -154,10 +172,14 @@
 		600DF32719813F8600005D9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				60D9A9561986A1D7004FEDE6 /* GRAGithubRequest.h */,
+				60D9A9571986A1D7004FEDE6 /* GRAGithubRequest.m */,
 				600DF32819813F9A00005D9D /* GFATableViewController.h */,
 				600DF32919813F9A00005D9D /* GFATableViewController.m */,
 				600DF32B1981481700005D9D /* GFATableViewCell.h */,
 				600DF32C1981481700005D9D /* GFATableViewCell.m */,
+				6095B0EF1982A7D900FFC6D5 /* GFAViewController.h */,
+				6095B0F01982A7D900FFC6D5 /* GFAViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -238,8 +260,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D9A95D1986DD42004FEDE6 /* downArrow.png in Resources */,
 				600DF30319813EE600005D9D /* InfoPlist.strings in Resources */,
 				600DF30B19813EE600005D9D /* Images.xcassets in Resources */,
+				60D9A95E1986DD42004FEDE6 /* profileArrow.png in Resources */,
+				60D9A9601986DD42004FEDE6 /* upArrow.png in Resources */,
+				60D9A95F1986DD42004FEDE6 /* searchButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6095B0F11982A7D900FFC6D5 /* GFAViewController.m in Sources */,
 				600DF32A19813F9A00005D9D /* GFATableViewController.m in Sources */,
 				600DF30519813EE600005D9D /* main.m in Sources */,
 				600DF32D1981481700005D9D /* GFATableViewCell.m in Sources */,
 				600DF30919813EE600005D9D /* GFAAppDelegate.m in Sources */,
+				60D9A9581986A1D7004FEDE6 /* GRAGithubRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +486,7 @@
 				600DF32319813EE600005D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		600DF32419813EE600005D9D /* Build configuration list for PBXNativeTarget "githubfriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +495,7 @@
 				600DF32619813EE600005D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
