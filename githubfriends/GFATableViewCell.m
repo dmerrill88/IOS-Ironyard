@@ -17,7 +17,7 @@
     UIImageView * friendaImage;
     
     UIButton * directionButton;
-    UIButton * numberbutton;
+    UILabel * numberbutton;
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -86,19 +86,19 @@
         
         
         
-        numberbutton = [[UIButton alloc] initWithFrame:CGRectMake(145.0, 78.0, 28.0, 28.0)];
+        numberbutton = [[UILabel alloc] initWithFrame:CGRectMake(145.0, 78.0, 28.0, 28.0)];
         
         //[numberbutton setTitle:@"8" forState:UIControlStateNormal];
         
         
         numberbutton.backgroundColor = [UIColor colorWithRed:0.227f green:0.227f blue:0.227f alpha:1.0f];
         
-        numberbutton.titleLabel.textColor = [UIColor blackColor];
+        numberbutton.textColor = [UIColor blackColor];
         
         numberbutton.layer.cornerRadius = 14.0;
         
-        numberbutton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
-        
+        numberbutton.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
+        numberbutton.textAlignment = NSTextAlignmentCenter;
         
         numberbutton.layer.borderColor = [UIColor whiteColor].CGColor;
         
@@ -217,8 +217,10 @@
         // Last word label must say LEADER
         
         [directionButton setBackgroundImage:[UIImage imageNamed:@"upArrow"] forState:UIControlStateNormal];
-    
+        numberbutton.textColor = [UIColor greenColor];
         
+        int difference = numberFriendFollowers - numberFriendFollowing;
+        numberbutton.text = [NSString stringWithFormat:@"%d", difference];
     }
     else if (numberFriendFollowers < numberFriendFollowing)
     {
@@ -226,6 +228,9 @@
         // make the number button have the number = (following - followers)
         // Last word label must say FOLLOWER
         [directionButton setBackgroundImage:[UIImage imageNamed:@"downArrow"] forState:UIControlStateNormal];
+        numberbutton.textColor = [UIColor redColor];
+        int difference = numberFriendFollowing - numberFriendFollowers;
+        numberbutton.text = [NSString stringWithFormat:@"%d", difference];
     
 
     }
@@ -236,7 +241,8 @@
         // make the number button have the number 0
         // Last word label must say Just Friends
         [directionButton setBackgroundColor:[UIColor grayColor]];
-
+        numberbutton.textColor = [UIColor grayColor];
+        numberbutton.text = @"0";
     }
     
     
