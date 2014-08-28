@@ -50,8 +50,8 @@
         
         self.levels = @[
                    @{
-                       @"cols" : @10,
-                       @"rows": @6,
+                       @"cols" : @5,
+                       @"rows": @3,
                        
                        },
                    @{
