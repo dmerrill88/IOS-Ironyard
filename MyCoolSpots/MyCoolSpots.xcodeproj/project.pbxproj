@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6028AEF519A23F8C006CDAE1 /* MCSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6028AEF419A23F8C006CDAE1 /* MCSAnnotation.m */; };
+		6028AEF719A248F4006CDAE1 /* greenPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6028AEF619A248F4006CDAE1 /* greenPin.png */; };
+		6028AEF919A24934006CDAE1 /* bluePin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6028AEF819A24934006CDAE1 /* bluePin.png */; };
+		6028AEFB19A24947006CDAE1 /* magentaPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 6028AEFA19A24947006CDAE1 /* magentaPin.png */; };
+		6028AEFE19A27E90006CDAE1 /* MCSFourSquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6028AEFD19A27E90006CDAE1 /* MCSFourSquareRequest.m */; };
+		6028AF0119A29483006CDAE1 /* MCSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6028AF0019A29483006CDAE1 /* MCSTableViewController.m */; };
+		91CA8B2A19A23354009BE9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CA8B2919A23354009BE9CC /* Foundation.framework */; };
+		91CA8B2C19A23354009BE9CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CA8B2B19A23354009BE9CC /* CoreGraphics.framework */; };
+		91CA8B2E19A23354009BE9CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CA8B2D19A23354009BE9CC /* UIKit.framework */; };
+		91CA8B3419A23354009BE9CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91CA8B3219A23354009BE9CC /* InfoPlist.strings */; };
+		91CA8B3619A23354009BE9CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA8B3519A23354009BE9CC /* main.m */; };
+		91CA8B3A19A23354009BE9CC /* MCSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA8B3919A23354009BE9CC /* MCSAppDelegate.m */; };
+		91CA8B3D19A23354009BE9CC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CA8B3B19A23354009BE9CC /* Main_iPhone.storyboard */; };
+		91CA8B4019A23354009BE9CC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CA8B3E19A23354009BE9CC /* Main_iPad.storyboard */; };
+		91CA8B4319A23354009BE9CC /* MCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA8B4219A23354009BE9CC /* MCSViewController.m */; };
+		91CA8B4519A23354009BE9CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CA8B4419A23354009BE9CC /* Images.xcassets */; };
+		91CA8B4C19A23354009BE9CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CA8B4B19A23354009BE9CC /* XCTest.framework */; };
+		91CA8B4D19A23354009BE9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CA8B2919A23354009BE9CC /* Foundation.framework */; };
+		91CA8B4E19A23354009BE9CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CA8B2D19A23354009BE9CC /* UIKit.framework */; };
+		91CA8B5619A23354009BE9CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91CA8B5419A23354009BE9CC /* InfoPlist.strings */; };
+		91CA8B5819A23354009BE9CC /* MyCoolSpotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CA8B5719A23354009BE9CC /* MyCoolSpotsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91CA8B4F19A23354009BE9CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91CA8B1E19A23354009BE9CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91CA8B2519A23354009BE9CC;
+			remoteInfo = MyCoolSpots;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6028AEF319A23F8C006CDAE1 /* MCSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSAnnotation.h; sourceTree = "<group>"; };
+		6028AEF419A23F8C006CDAE1 /* MCSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSAnnotation.m; sourceTree = "<group>"; };
+		6028AEF619A248F4006CDAE1 /* greenPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenPin.png; path = "../Map Location Pins/PNG/greenPin.png"; sourceTree = "<group>"; };
+		6028AEF819A24934006CDAE1 /* bluePin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluePin.png; path = "../Map Location Pins/PNG/bluePin.png"; sourceTree = "<group>"; };
+		6028AEFA19A24947006CDAE1 /* magentaPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magentaPin.png; path = "../Map Location Pins/PNG/magentaPin.png"; sourceTree = "<group>"; };
+		6028AEFC19A27E90006CDAE1 /* MCSFourSquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSFourSquareRequest.h; path = ../MCSFourSquareRequest.h; sourceTree = "<group>"; };
+		6028AEFD19A27E90006CDAE1 /* MCSFourSquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSFourSquareRequest.m; path = ../MCSFourSquareRequest.m; sourceTree = "<group>"; };
+		6028AEFF19A29483006CDAE1 /* MCSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSTableViewController.h; sourceTree = "<group>"; };
+		6028AF0019A29483006CDAE1 /* MCSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSTableViewController.m; sourceTree = "<group>"; };
+		91CA8B2619A23354009BE9CC /* MyCoolSpots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoolSpots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CA8B2919A23354009BE9CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91CA8B2B19A23354009BE9CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		91CA8B2D19A23354009BE9CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91CA8B3119A23354009BE9CC /* MyCoolSpots-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCoolSpots-Info.plist"; sourceTree = "<group>"; };
+		91CA8B3319A23354009BE9CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91CA8B3519A23354009BE9CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91CA8B3719A23354009BE9CC /* MyCoolSpots-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCoolSpots-Prefix.pch"; sourceTree = "<group>"; };
+		91CA8B3819A23354009BE9CC /* MCSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSAppDelegate.h; sourceTree = "<group>"; };
+		91CA8B3919A23354009BE9CC /* MCSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSAppDelegate.m; sourceTree = "<group>"; };
+		91CA8B3C19A23354009BE9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		91CA8B3F19A23354009BE9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		91CA8B4119A23354009BE9CC /* MCSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSViewController.h; sourceTree = "<group>"; };
+		91CA8B4219A23354009BE9CC /* MCSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSViewController.m; sourceTree = "<group>"; };
+		91CA8B4419A23354009BE9CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		91CA8B4A19A23354009BE9CC /* MyCoolSpotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCoolSpotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CA8B4B19A23354009BE9CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		91CA8B5319A23354009BE9CC /* MyCoolSpotsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCoolSpotsTests-Info.plist"; sourceTree = "<group>"; };
+		91CA8B5519A23354009BE9CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91CA8B5719A23354009BE9CC /* MyCoolSpotsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCoolSpotsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91CA8B2319A23354009BE9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CA8B2C19A23354009BE9CC /* CoreGraphics.framework in Frameworks */,
+				91CA8B2E19A23354009BE9CC /* UIKit.framework in Frameworks */,
+				91CA8B2A19A23354009BE9CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91CA8B4719A23354009BE9CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CA8B4C19A23354009BE9CC /* XCTest.framework in Frameworks */,
+				91CA8B4E19A23354009BE9CC /* UIKit.framework in Frameworks */,
+				91CA8B4D19A23354009BE9CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91CA8B1D19A23354009BE9CC = {
+			isa = PBXGroup;
+			children = (
+				6028AEFA19A24947006CDAE1 /* magentaPin.png */,
+				6028AEF819A24934006CDAE1 /* bluePin.png */,
+				6028AEF619A248F4006CDAE1 /* greenPin.png */,
+				91CA8B2F19A23354009BE9CC /* MyCoolSpots */,
+				91CA8B5119A23354009BE9CC /* MyCoolSpotsTests */,
+				91CA8B2819A23354009BE9CC /* Frameworks */,
+				91CA8B2719A23354009BE9CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91CA8B2719A23354009BE9CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91CA8B2619A23354009BE9CC /* MyCoolSpots.app */,
+				91CA8B4A19A23354009BE9CC /* MyCoolSpotsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91CA8B2819A23354009BE9CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91CA8B2919A23354009BE9CC /* Foundation.framework */,
+				91CA8B2B19A23354009BE9CC /* CoreGraphics.framework */,
+				91CA8B2D19A23354009BE9CC /* UIKit.framework */,
+				91CA8B4B19A23354009BE9CC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91CA8B2F19A23354009BE9CC /* MyCoolSpots */ = {
+			isa = PBXGroup;
+			children = (
+				6028AEFF19A29483006CDAE1 /* MCSTableViewController.h */,
+				6028AF0019A29483006CDAE1 /* MCSTableViewController.m */,
+				91CA8B4119A23354009BE9CC /* MCSViewController.h */,
+				91CA8B4219A23354009BE9CC /* MCSViewController.m */,
+				6028AEFC19A27E90006CDAE1 /* MCSFourSquareRequest.h */,
+				6028AEFD19A27E90006CDAE1 /* MCSFourSquareRequest.m */,
+				91CA8B3B19A23354009BE9CC /* Main_iPhone.storyboard */,
+				91CA8B3E19A23354009BE9CC /* Main_iPad.storyboard */,
+				91CA8B4419A23354009BE9CC /* Images.xcassets */,
+				91CA8B3819A23354009BE9CC /* MCSAppDelegate.h */,
+				91CA8B3919A23354009BE9CC /* MCSAppDelegate.m */,
+				91CA8B3019A23354009BE9CC /* Supporting Files */,
+				6028AEF319A23F8C006CDAE1 /* MCSAnnotation.h */,
+				6028AEF419A23F8C006CDAE1 /* MCSAnnotation.m */,
+			);
+			path = MyCoolSpots;
+			sourceTree = "<group>";
+		};
+		91CA8B3019A23354009BE9CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91CA8B3119A23354009BE9CC /* MyCoolSpots-Info.plist */,
+				91CA8B3219A23354009BE9CC /* InfoPlist.strings */,
+				91CA8B3519A23354009BE9CC /* main.m */,
+				91CA8B3719A23354009BE9CC /* MyCoolSpots-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91CA8B5119A23354009BE9CC /* MyCoolSpotsTests */ = {
+			isa = PBXGroup;
+			children = (
+				91CA8B5719A23354009BE9CC /* MyCoolSpotsTests.m */,
+				91CA8B5219A23354009BE9CC /* Supporting Files */,
+			);
+			path = MyCoolSpotsTests;
+			sourceTree = "<group>";
+		};
+		91CA8B5219A23354009BE9CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91CA8B5319A23354009BE9CC /* MyCoolSpotsTests-Info.plist */,
+				91CA8B5419A23354009BE9CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91CA8B2519A23354009BE9CC /* MyCoolSpots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91CA8B5B19A23354009BE9CC /* Build configuration list for PBXNativeTarget "MyCoolSpots" */;
+			buildPhases = (
+				91CA8B2219A23354009BE9CC /* Sources */,
+				91CA8B2319A23354009BE9CC /* Frameworks */,
+				91CA8B2419A23354009BE9CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCoolSpots;
+			productName = MyCoolSpots;
+			productReference = 91CA8B2619A23354009BE9CC /* MyCoolSpots.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91CA8B4919A23354009BE9CC /* MyCoolSpotsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91CA8B5E19A23354009BE9CC /* Build configuration list for PBXNativeTarget "MyCoolSpotsTests" */;
+			buildPhases = (
+				91CA8B4619A23354009BE9CC /* Sources */,
+				91CA8B4719A23354009BE9CC /* Frameworks */,
+				91CA8B4819A23354009BE9CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91CA8B5019A23354009BE9CC /* PBXTargetDependency */,
+			);
+			name = MyCoolSpotsTests;
+			productName = MyCoolSpotsTests;
+			productReference = 91CA8B4A19A23354009BE9CC /* MyCoolSpotsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91CA8B1E19A23354009BE9CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MCS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Heidi Proske";
+				TargetAttributes = {
+					91CA8B4919A23354009BE9CC = {
+						TestTargetID = 91CA8B2519A23354009BE9CC;
+					};
+				};
+			};
+			buildConfigurationList = 91CA8B2119A23354009BE9CC /* Build configuration list for PBXProject "MyCoolSpots" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91CA8B1D19A23354009BE9CC;
+			productRefGroup = 91CA8B2719A23354009BE9CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91CA8B2519A23354009BE9CC /* MyCoolSpots */,
+				91CA8B4919A23354009BE9CC /* MyCoolSpotsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91CA8B2419A23354009BE9CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6028AEFB19A24947006CDAE1 /* magentaPin.png in Resources */,
+				91CA8B4019A23354009BE9CC /* Main_iPad.storyboard in Resources */,
+				6028AEF919A24934006CDAE1 /* bluePin.png in Resources */,
+				91CA8B4519A23354009BE9CC /* Images.xcassets in Resources */,
+				6028AEF719A248F4006CDAE1 /* greenPin.png in Resources */,
+				91CA8B3D19A23354009BE9CC /* Main_iPhone.storyboard in Resources */,
+				91CA8B3419A23354009BE9CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91CA8B4819A23354009BE9CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CA8B5619A23354009BE9CC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91CA8B2219A23354009BE9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CA8B4319A23354009BE9CC /* MCSViewController.m in Sources */,
+				6028AF0119A29483006CDAE1 /* MCSTableViewController.m in Sources */,
+				91CA8B3A19A23354009BE9CC /* MCSAppDelegate.m in Sources */,
+				6028AEF519A23F8C006CDAE1 /* MCSAnnotation.m in Sources */,
+				6028AEFE19A27E90006CDAE1 /* MCSFourSquareRequest.m in Sources */,
+				91CA8B3619A23354009BE9CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91CA8B4619A23354009BE9CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CA8B5819A23354009BE9CC /* MyCoolSpotsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91CA8B5019A23354009BE9CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91CA8B2519A23354009BE9CC /* MyCoolSpots */;
+			targetProxy = 91CA8B4F19A23354009BE9CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91CA8B3219A23354009BE9CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91CA8B3319A23354009BE9CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		91CA8B3B19A23354009BE9CC /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91CA8B3C19A23354009BE9CC /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		91CA8B3E19A23354009BE9CC /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91CA8B3F19A23354009BE9CC /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		91CA8B5419A23354009BE9CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91CA8B5519A23354009BE9CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91CA8B5919A23354009BE9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91CA8B5A19A23354009BE9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91CA8B5C19A23354009BE9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCoolSpots/MyCoolSpots-Prefix.pch";
+				INFOPLIST_FILE = "MyCoolSpots/MyCoolSpots-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		91CA8B5D19A23354009BE9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCoolSpots/MyCoolSpots-Prefix.pch";
+				INFOPLIST_FILE = "MyCoolSpots/MyCoolSpots-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		91CA8B5F19A23354009BE9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyCoolSpots.app/MyCoolSpots";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCoolSpots/MyCoolSpots-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyCoolSpotsTests/MyCoolSpotsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		91CA8B6019A23354009BE9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyCoolSpots.app/MyCoolSpots";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCoolSpots/MyCoolSpots-Prefix.pch";
+				INFOPLIST_FILE = "MyCoolSpotsTests/MyCoolSpotsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91CA8B2119A23354009BE9CC /* Build configuration list for PBXProject "MyCoolSpots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91CA8B5919A23354009BE9CC /* Debug */,
+				91CA8B5A19A23354009BE9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91CA8B5B19A23354009BE9CC /* Build configuration list for PBXNativeTarget "MyCoolSpots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91CA8B5C19A23354009BE9CC /* Debug */,
+				91CA8B5D19A23354009BE9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91CA8B5E19A23354009BE9CC /* Build configuration list for PBXNativeTarget "MyCoolSpotsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91CA8B5F19A23354009BE9CC /* Debug */,
+				91CA8B6019A23354009BE9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91CA8B1E19A23354009BE9CC /* Project object */;
+}
