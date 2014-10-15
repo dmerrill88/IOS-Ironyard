@@ -9,6 +9,8 @@
 #import "SCRAppDelegate.h"
 #import "BABGameBoardViewController.h"
 
+#import <Crashlytics/Crashlytics.h>
+
 @implementation SCRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +18,9 @@
 
 
 {
+    
+    
+    [Crashlytics startWithAPIKey:@"f325648a1275a5e9b4de1b88b22eca10d4a26e2f"];
     
     
     [BABLevelData mainData].number = 4;

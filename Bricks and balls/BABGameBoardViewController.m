@@ -11,6 +11,10 @@
 #import "BABLevelData.h"
 
 #import "BABHeaderView.h"
+
+#import <Crashlytics/Crashlytics.h>
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // 3 lives
@@ -159,6 +163,9 @@
        // }
     
     
+
+    
+    
 }
 
 - (void)showStartButtonWithTitle:(NSString *)title
@@ -298,7 +305,7 @@
     
     [animator addBehavior:pushBehavior];
     
-    
+
     
 }
 
@@ -399,7 +406,6 @@
                     
                     
                     
-                    NSLog(@"%d",[[BABLevelData mainData].levels count]);
 
                 }
                 

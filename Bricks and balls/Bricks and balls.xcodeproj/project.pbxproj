@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		608E0F7919B772FC0002DC60 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 608E0F7819B772FC0002DC60 /* Crashlytics.framework */; };
 		6096F0C61992620F004EB268 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096F0C51992620F004EB268 /* Foundation.framework */; };
 		6096F0C81992620F004EB268 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096F0C71992620F004EB268 /* CoreGraphics.framework */; };
 		6096F0CA1992620F004EB268 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096F0C91992620F004EB268 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		608E0F7819B772FC0002DC60 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		6096F0C21992620F004EB268 /* Bricks and balls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bricks and balls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6096F0C51992620F004EB268 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6096F0C71992620F004EB268 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +68,7 @@
 			files = (
 				6096F0C81992620F004EB268 /* CoreGraphics.framework in Frameworks */,
 				6096F0CA1992620F004EB268 /* UIKit.framework in Frameworks */,
+				608E0F7919B772FC0002DC60 /* Crashlytics.framework in Frameworks */,
 				6096F0C61992620F004EB268 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +110,7 @@
 		6096F0C41992620F004EB268 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				608E0F7819B772FC0002DC60 /* Crashlytics.framework */,
 				6096F0C51992620F004EB268 /* Foundation.framework */,
 				6096F0C71992620F004EB268 /* CoreGraphics.framework */,
 				6096F0C91992620F004EB268 /* UIKit.framework */,
@@ -193,6 +197,7 @@
 				6096F0BE1992620F004EB268 /* Sources */,
 				6096F0BF1992620F004EB268 /* Frameworks */,
 				6096F0C01992620F004EB268 /* Resources */,
+				608E0F7719B772A40002DC60 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -273,6 +278,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		608E0F7719B772A40002DC60 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run f325648a1275a5e9b4de1b88b22eca10d4a26e2f b715b70c50d5f113fce2b26759ffcfe75120f02e1a8840328b2ba06ee91b8bfc";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6096F0BE1992620F004EB268 /* Sources */ = {
@@ -400,6 +421,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bricks and balls/Bricks and balls-Prefix.pch";
 				INFOPLIST_FILE = "Bricks and balls/Bricks and balls-Info.plist";
@@ -413,6 +438,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bricks and balls/Bricks and balls-Prefix.pch";
 				INFOPLIST_FILE = "Bricks and balls/Bricks and balls-Info.plist";
@@ -480,6 +509,7 @@
 				6096F0F01992620F004EB268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6096F0F11992620F004EB268 /* Build configuration list for PBXNativeTarget "Bricks and ballsTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +518,7 @@
 				6096F0F31992620F004EB268 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
