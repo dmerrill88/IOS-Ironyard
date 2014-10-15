@@ -43,13 +43,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             
             spriteNode.physicsBody = SKPhysicsBody(circleOfRadius: spriteNode.frame.size.width/2.0)
             
-            spriteNode.physicsBody.restitution = 1.0
+            spriteNode.physicsBody?.restitution = 1.0
             
-            spriteNode.physicsBody.density = 0.4
+            spriteNode.physicsBody?.density = 0.4
             
-            spriteNode.physicsBody.mass = 0.05
+            spriteNode.physicsBody?.mass = 0.05
             
-            spriteNode.physicsBody.categoryBitMask = 1
+            spriteNode.physicsBody?.categoryBitMask = 1
             
             var floatI = CGFloat(i)
             
@@ -89,7 +89,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
                 
                 dart.physicsBody = SKPhysicsBody(rectangleOfSize: dart.frame.size)
                 
-                dart.physicsBody.contactTestBitMask = 1
+                dart.physicsBody?.contactTestBitMask = 1
 
                 
                 self.addChild(dart)
